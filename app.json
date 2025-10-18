@@ -10,7 +10,7 @@
     "N8N_PORT": { "value": "8080" }
   },
   "addons": [
-    { "plan": "heroku-postgresql:mini" }
+    { "plan": "heroku-postgresql: Essential-0" }
   ],
   "build": {
     "docker": {
