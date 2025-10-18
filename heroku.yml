@@ -1,9 +1,8 @@
-# heroku.yml
 setup:
-  addons:
-    - plan: heroku-postgresql:mini
+    addons:
+      - plan: heroku-postgresql
+        as: DATABASE
+
 build:
-  docker:
-    web: Dockerfile
-run:
-  web: /entrypoint.sh
+    docker:
+        web: Dockerfile
